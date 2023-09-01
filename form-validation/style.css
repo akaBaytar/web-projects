@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* resetting */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb;
+  font-family: "Poppins", sans-serif;
+}
+
+/* project style */
+.container {
+  width: 25%;
+  min-width: 18rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-control.success input {
+  border: 1.5px solid green;
+}
+
+.form-control.error input {
+  border: 1.5px solid red;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control label {
+  font-size: 0.9rem;
+}
+
+.form-control input {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border: 1.5px solid #999;
+}
+
+.form-control small {
+  margin-top: -0.25rem;
+  font-size: 0.75rem;
+  color: red;
+  visibility: hidden;
+}
+
+button {
+  cursor: pointer;
+  height: 3rem;
+  margin-top: 1rem;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #352f44;
+}
+
+button:active {
+  scale: 0.95;
+}
