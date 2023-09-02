@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Movie Seat Bookking</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ticket">
+        <p class="film-name">Film: <span>Oppenheimer</span></p>
+        <label>Pick a ticket:</label>
+        <select id="ticket">
+          <option value="95">2D Full Fare (95₺)</option>
+          <option value="85">2D Student Ticket (85₺)</option>
+          <option value="110">3D (110₺)</option>
+          <option value="145">IMAX&reg; (145₺)</option>
+          <option value="175">Gold Class (175₺)</option>
+          <option value="400">Skybox Seat (400₺)</option>
+        </select>
+      </div>
+      <div class="seats-and-screen">
+        <div class="screen"></div>
+        <div class="seat-row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="seat-row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="seat-row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="seat-row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="seat-row">
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+        </div>
+        <div class="seat-row">
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+        </div>
+      </div>
+      <div class="showcase">
+        <ul class="seat-list">
+          <li class="list-item">
+            <div class="seat"></div>
+            <small>Empty</small>
+          </li>
+          <li class="list-item">
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li class="list-item">
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+      </div>
+      <div class="total-price">
+        <p class="price">
+          You have selected
+          <span class="total-seat">0</span> seats for a price of
+          <span class="total">0</span><span>₺</span>
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
