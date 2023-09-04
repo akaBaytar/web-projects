@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Meal Recipes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-top">
+        <h1 class="title" style="font-size: 1.8rem">Meal Recipes</h1>
+        <p class="description" style="font-size: 0.8rem">
+          Search to discover unique and delicious flavors.
+        </p>
+        <div class="search-container">
+          <form id="search-form">
+            <input type="text" id="search" placeholder="Search a meal..." />
+            <button type="submit" id="search-button">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <button id="random-button"><i class="bi bi-shuffle"></i></button>
+        </div>
+      </div>
+      <div class="container-bottom">
+        <h3 class="result-title"></h3>
+        <div class="results"></div>
+      </div>
+    </div>
+    <div class="modal-details">
+      <div class="container container-details"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
