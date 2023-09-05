@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Expense Tracker</h1>
+      <h4>
+        YOUR BALANCE
+        <strong id="balance">0.00₺</strong>
+      </h4>
+      <div class="balance-container">
+        <div class="track income">
+          <p>INCOME</p>
+          <span id="income">0.00</span>
+        </div>
+        <div class="seperator"></div>
+        <div class="track expense">
+          <p>EXPENSE</p>
+          <span id="expense">0.00₺</span>
+        </div>
+      </div>
+      <h4>Transaction History</h4>
+      <div class="transaction-container">
+        <ul class="transaction-list"></ul>
+      </div>
+      <h4>Add new transaction</h4>
+      <form class="transaction-form">
+        <div class="form-control">
+          <label for="transaction">Transaction</label>
+          <input
+            type="text"
+            id="transaction"
+            placeholder="Enter transaction name"
+          />
+        </div>
+        <div class="form-control">
+          <label for="amount">
+            Amount
+            <small>(negative amount for expense)</small>
+          </label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter transaction amount"
+          />
+        </div>
+        <button class="add-button" type="submit">Add Transaction</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
