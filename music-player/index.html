@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Music Player</h1>
+      <div class="music-info">
+        <h4 class="music-title"></h4>
+        <div class="progress-bar">
+          <span class="progress"></span>
+        </div>
+      </div>
+      <audio src="./sound/blast.mp3" id="music" preload="metadata"> </audio>
+      <div class="img">
+        <img src="./img/blast.png" alt="Blast" id="cover" />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-button">
+          <i class="bi bi-skip-backward-fill"></i>
+        </button>
+        <button id="play" class="action-button large-button">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <button id="next" class="action-button">
+          <i class="bi bi-skip-forward-fill"></i>
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
