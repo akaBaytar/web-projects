@@ -81,7 +81,7 @@ nextButtonDOM.addEventListener("click", () => {
 });
 
 prevButtonDOM.addEventListener("click", () => {
-  cardDOM[current].className = "card left";
+  cardDOM[current].className = "card";
   current--;
   if (current < 0) {
     current = 0;
