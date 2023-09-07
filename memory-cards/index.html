@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Memory Cards</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h3 class="title">Memory Cards</h3>
+      <div class="container cards-container"></div>
+      <div class="container navigation-container">
+        <button class="button small-button" id="prev">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <span class="current small-button"></span>
+        <button class="button small-button" id="next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+      <div class="container buttons-container">
+        <button class="button add-card">
+          <i class="bi bi-plus-lg"></i>
+          Add Card
+        </button>
+        <button class="button delete-card">
+          <i class="bi bi-trash3"></i>
+          Delete Cards
+        </button>
+      </div>
+      <div class="confirm-delete">
+        <p>Are you sure?</p>
+        <div class="buttons-container">
+          <button class="button small-button" id="yes">Yes</button>
+          <button class="button small-button" id="no">No</button>
+        </div>
+      </div>
+      <div class="container new-card-container">
+        <h3 class="title">Add New Card</h3>
+        <div class="form-group">
+          <label for="new-question">Question:</label>
+          <textarea id="new-question"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="new-answer">Answer:</label>
+          <textarea id="new-answer"></textarea>
+        </div>
+        <div class="button-container">
+          <button class="button add-new-button">
+            <i class="bi bi-plus-lg"></i>
+            Add Card
+          </button>
+          <button class="button small-button x-button">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
