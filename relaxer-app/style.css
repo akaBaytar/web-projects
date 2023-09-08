@@ -1,0 +1,144 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* resetting */
+:root {
+  --light: #93b1a6;
+  --dark: #5c8374;
+  --darker: #183d3d;
+  --text: #f9fafb;
+  --background: #040d12;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+  color: var(--text);
+  background-color: var(--background);
+  font-family: "Poppins", sans-serif;
+  background-image: url("./img/background.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* project style */
+blockquote {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+blockquote p {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.outer-circle {
+  top: -0.5rem;
+  left: -0.5rem;
+  width: 19rem;
+  height: 19rem;
+  z-index: -2;
+  background: conic-gradient(
+    var(--dark) 0%,
+    var(--dark) 40%,
+    var(--light) 40%,
+    var(--light) 60%,
+    var(--darker) 60%,
+    var(--darker) 100%
+  );
+}
+
+.pointer-container {
+  width: 1rem;
+  height: 11rem;
+  position: absolute;
+  bottom: 9rem;
+}
+
+.pointer-container.start {
+  animation: rotate 7.5s linear infinite forwards;
+  transform-origin: bottom center;
+}
+
+.pointer {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--text);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.25;
+  }
+}
+
+@keyframes shrink {
+  from {
+    scale: 1.25;
+  }
+  to {
+    scale: 1;
+  }
+}
