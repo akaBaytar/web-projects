@@ -25,18 +25,23 @@ function letsStart() {
 }
 
 function countDown() {
+  text.style.fontSize = "5rem";
+  text.innerText = "3";
   setTimeout(() => {
-    text.style.fontSize = "5rem";
-    text.innerText = "3";
+    text.innerText = "2";
     setTimeout(() => {
-      text.innerText = "2";
-      setTimeout(() => {
-        text.innerText = "1";
-      }, timer);
+      text.innerText = "1";
     }, timer);
   }, timer);
 }
 
-//function call
-setInterval(letsStart, total);
-setTimeout(countDown, 500);
+//event listener
+container.addEventListener(
+  "click",
+  () => {
+    setInterval(letsStart, total);
+    setTimeout(countDown, timer);
+    container.style.cursor = "default";
+  },
+  { once: true }
+);
