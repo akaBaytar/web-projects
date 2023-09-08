@@ -1,0 +1,84 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* resetting */
+:root {
+  --color1: #eb455f;
+  --color2: #fcffe7;
+  --color3: #bad7e9;
+  --color4: #2b3467;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--color2);
+  background: linear-gradient(to right, var(--color1), var(--color4));
+  background-repeat: no-repeat;
+}
+
+/* project style */
+.container {
+  display: none;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.year {
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 8rem;
+  z-index: -1;
+  color: var(--color4);
+  opacity: 0.3;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.countdown {
+  font-size: 4rem;
+}
+
+small {
+  margin-top: -1rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  body {
+    gap: 1rem;
+  }
+  .countdown {
+    font-size: 2rem;
+  }
+
+  small {
+    margin-top: 0rem;
+    font-size: 0.9rem;
+  }
+
+  .year {
+    font-weight: 700;
+    font-size: 5rem;
+  }
+}
